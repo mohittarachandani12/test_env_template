@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin Dashboard</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            background-color: #f4f4f4;
+        }
+        header {
+            background-color: #333;
+            color: white;
+            padding: 20px;
+            text-align: center;
+        }
+        .container {
+            display: flex;
+            height: 100vh;
+        }
+        nav {
+            width: 250px;
+            background-color: #444;
+            padding: 20px;
+            color: white;
+        }
+        nav ul {
+            list-style-type: none;
+            padding: 0;
+        }
+        nav ul li {
+            margin: 20px 0;
+        }
+        nav ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        nav ul li a:hover {
+            text-decoration: underline;
+        }
+        main {
+            flex-grow: 1;
+            background-color: #fff;
+            padding: 20px;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        section h2 {
+            margin-bottom: 10px;
+        }
+        .actions ul {
+            list-style-type: none;
+            padding: 0;
+            display: flex;
+            justify-content: space-between;
+        }
+        .actions ul li {
+            background-color: #333;
+            padding: 10px 20px;
+            color: white;
+            border-radius: 5px;
+        }
+        .actions ul li a {
+            color: white;
+            text-decoration: none;
+        }
+        .actions ul li a:hover {
+            text-decoration: underline;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Admin Dashboard</h1>
+    </header>
+
+    <div class="container">
+        <!-- Sidebar/Navigation -->
+        <nav>
+            <h2>Menu</h2>
+            <ul>
+                <li><a href="#">Dashboard Overview</a></li>
+                <li><a href="#">User Management</a></li>
+                <li><a href="#">Settings</a></li>
+                <li><a href="#">Reports</a></li>
+                <li><a href="#">Help</a></li>
+            </ul>
+        </nav>
+
+        <!-- Main Content -->
+        <main>
+            <section>
+                <h2>Welcome, Admin</h2>
+                <p>Here’s a quick overview of the latest activities and statistics.</p>
+            </section>
+
+            <section class="actions">
+                <h2>Admin Actions</h2>
+                <!-- Admin action links -->
+                <ul>
+                    <li><a href="#">Link1</a></li>
+                    <li><a href="#">Link2</a></li>
+                    <li><a href="#">Link3</a></li>
+                    <li><a href="#">Link4</a></li>
+                </ul>
+            </section>
+
+            <section>
+                <h2>Recent Activity</h2>
+                <p>No recent activity yet.</p>
+            </section>
+        </main>
+    </div>
+
+</body>
+</html>
